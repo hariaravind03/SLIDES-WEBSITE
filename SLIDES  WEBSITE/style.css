@@ -1,0 +1,520 @@
+.{
+    margin: 0;
+    padding: 0;
+    border:0;
+    font-family: sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+
+}
+
+body{
+  
+    width: 100%;
+    height: 140vh;
+    background-image: url("images/back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section{
+    
+    width: 100%;
+    height: 180vh;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+video{
+    width: 100%;
+    height:180vh;
+    align-items: center;
+    scrollbar-shadow-color: aquamarine;
+}
+
+
+
+
+
+nav{
+    gap: 50px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   box-shadow: 0 0 100px rgba(0,0, 0, 0.6);
+   position: relative;
+   top: 0;
+   left: 0;
+   right:0;
+   z-index: 200;
+   
+
+}
+
+
+section nav .logo img{
+    position: relative;
+    top: 20px;
+    height: 100px;
+}
+
+section nav .logo span{
+    color: blue;
+    text-decoration: underline;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 2ms;
+    text-shadow: 0px 0px 10px 50px purple;
+}
+
+
+
+.search{
+    margin-bottom: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    line-height: 50px;
+    box-shadow: 0 0 15px 7px blueviolet;
+
+    height: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    background:white;
+ }
+ 
+ 
+ .search:hover input{
+    width: 520px;
+
+ }
+
+
+ .search input{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    line-height: 50px;
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    background: transparent;
+    transition: 0.8s;
+
+
+ }
+
+ .search a {
+    font-size: 25px;
+    width: 25px;
+    background-color: blueviolet;
+    border-radius: 100px;
+ }
+
+ .search a i{
+    font-size: 20px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+ }
+
+section nav ul li a:hover{
+    color: purple;
+}
+
+section nav .icon i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 3ms;
+    color: white;
+
+}
+
+
+section nav .icon i:hover{
+    color: blueviolet;
+}
+
+
+section .main .main_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .main .main_content .main_text h1{
+    font-size: 30px;
+   
+    top: 5px;
+    text-align: end;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left:;
+}
+
+
+section .main .social_icon {
+    color: azure;
+  
+    position:absolute;
+    font-size: 30px;
+    top: 780px;
+    left: 98%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+section .main .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 3ms;
+}
+
+section .main .social_icon i:hover{
+    color: magenta;
+}
+
+section .main .buttons{
+
+
+    top: 900px;
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: red;
+}
+
+section .main .buttons a{
+    color: white;
+    text-decoration: none;
+}
+
+section .main .buttons i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+section .main .buttons:hover i{
+    transform: translateX(6px);
+}
+
+
+
+.products{
+    background-color: transparent;
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+}
+
+.products h1{
+
+    margin: 35px;
+    font-size: 60px;
+    display: flex;
+    flex: 10px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right,white,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.products .boxes{
+    
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: grid;
+    grid-gap: 50px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.products .boxes .card{
+ 
+    width: 290px;
+    height: 440px;
+    box-shadow: 0px 0px 15px 7px blueviolet;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 10px;
+    background: white;
+}
+
+
+.products .boxes .card .small_card{
+   
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+
+
+.products .boxes .card:hover .small_card{
+    opacity: 1;
+    transform: translateX(2px);
+    cursor: pointer;
+}
+
+.products .boxes .card .small_card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 25px;
+    margin: 2px 0;
+    line height: 20px;
+    border: 2px solid black;
+    transition: 0.3em;s;
+    cursor: pointer;
+
+}
+
+
+
+.products .boxes .card .small_card i:hover{
+    color: blueviolet;
+}
+
+
+.products .boxes .card .image img{
+    width: 150px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.products .boxes .card .image img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.products .boxes .card .products_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+
+
+
+.products .boxes .card .products_star{
+    color: gold;
+}
+
+.products .boxes .card  .btn{
+    text-decoration: none;
+    line-height: 3em;
+    padding: 10px 10px;
+    background:linear-gradient(to right,purple,pink);
+    color: white;
+    transition: 0.3s;
+    width: auto;
+    margin: auto;
+    
+}
+
+
+.products .boxes .card .btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+.productsearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1em;
+    height: 30px;
+    width: 430px;
+    cursor: pointer;
+    float: calc(400px,400px);
+    padding: 10px 20px ;
+    background: white;
+    border-radius: 30px;
+    text-shadow: 10px purple;
+
+}
+
+
+
+ .productsearch:hover input{
+    
+    width: 400px;
+}
+
+
+ .productsearch input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+
+
+}
+
+
+.productsearch a .fas{
+    color: purple;
+    font-size: 18px;
+}
+
+
+
+
+
+
+.about h1{
+    color: white;
+    top: 100px;
+}
+
+.about .about_image img{
+    margin-left: 140px;
+    height: 100vh;
+    width: 80%;
+    border-radius: 400px;
+    box-shadow: 0px 0px 15px 7px blueviolet;
+}
+
+
+.about .about_image .content{
+    position: absolute;
+    left: 930px;
+    top: 4400px ; 
+    font-size: 30px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 5px 5px 5px 5px 5px;
+    grid-gap: 50px;
+}
+ 
+
+
+/**Review**/
+
+
+.review{
+    position: relative;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.review .slide_container .slide{
+
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 15px 7px blueviolet;
+    width: 800px;
+    height: 200px;
+
+
+    animation: slide .4s linear;
+}
+
+.review h1{
+    color: white;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 2px;
+}
+
+/**Review**/
+
+.review .slide_container .slide .user{
+    display: flex;
+    align-items: center;
+}
+
+
+.review .slide_container .slide .user img{
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+.review .slide_container .slide .user .stars{
+    color: gold;
+}
+
+
+.review .slide_container{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 400px;
+  
+    
+}
+
+.controls{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top:  750px;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+
+.controls span{
+    width: 15px;
+    height: 15px;
+    background: blueviolet;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.controls .active{
+    width: 45px;
+}
